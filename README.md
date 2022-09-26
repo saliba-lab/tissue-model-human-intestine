@@ -16,7 +16,9 @@ An _in vitro_ model of the human small intestine
    - Install [conda](https://docs.conda.io/en/latest/miniconda.html)
    
    - Create **conda** environment
-   > conda env create -f envs/default.yml
+   ```
+   conda env create -f envs/default.yml
+   ```
    
    - Run the scripts
    ```
