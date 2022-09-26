@@ -6,24 +6,20 @@ Usage:
     
 Options:
     -h --help         Show this screen.
-    --plot-dir=<path> Directory for visualizations [default: analysis/control/core]
     --name=<file>     Name of output file [default: data/control/seurat.Rds]
 " -> doc
 
 # Global variables -------------------------------------------------------------
+
+# Input arguments
 args <- docopt::docopt(doc)
 file <- args[["--name"]]
-to <- args[["--plot-dir"]]
-if (!stringr::str_ends(to, "/")) {
-  to <- paste0(to, "/")
-}
-dir.create(to, recursive = TRUE)
+seed <- 42
 
 # Load data --------------------------------------------------------------------
 ds <- readRDS(file)
 
 # Compute embedding & clusters -------------------------------------------------
-seed <- 42
 
 ds <- Seurat::NormalizeData(ds)
 ds <- Seurat::FindVariableFeatures(ds, nfeatures = 5000)

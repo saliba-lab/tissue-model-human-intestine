@@ -20,17 +20,20 @@ suppressMessages({
 # Input arguments
 args <- docopt::docopt(doc)
 file <- args[["--name"]]
-to <- args[["--plot-dir"]]
-if (!stringr::str_ends(to, "/")) {
-  to <- paste0(to, "/")
-}
-dir.create(to, recursive = TRUE)
+seed <- 42
 
 # Colors
 cols <- list(
   Replicate = c("A" = "darkorange", "B" = "steelblue"),
   Phase = c("G1" = "grey", "G2M" = "seagreen", "S" = "purple")
 )
+
+# Output arguments
+to <- args[["--plot-dir"]]
+if (!stringr::str_ends(to, "/")) {
+  to <- paste0(to, "/")
+}
+dir.create(to, recursive = TRUE)
 
 # Load data --------------------------------------------------------------------
 ds <- readRDS(file)
@@ -938,7 +941,7 @@ ggplot2::ggplot(
 
 # Save plot & table
 fn <- paste0(to, "dotplot-marker-go", ".png")
-ggplot2::ggsave(fn, width = 7, height = 7)
+ggplot2::ggsave(fn, width = 9, height = 7)
 
 write.table(
   x         = result@compareClusterResult,
