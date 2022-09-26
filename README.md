@@ -1,5 +1,6 @@
-# tissue model human intestine
-An _in vitro_ model of the human small intestine
+# _In vitro_ model of the human small intestine
+
+This repository contains code for the analysis of scRNA-seq of two tissue models combined by hashtag oligos (HTO) in one dataset (control).
 
 ## Directory structure
 
@@ -13,6 +14,9 @@ An _in vitro_ model of the human small intestine
 
 * Control
    - Clone the **git** repository
+   ```
+   git clone https://github.com/saliba-lab/tissue-model-human-intestine.git
+   ```
    
    - Install [conda](https://docs.conda.io/en/latest/miniconda.html)
    
