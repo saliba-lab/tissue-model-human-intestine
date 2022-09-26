@@ -19,11 +19,9 @@ An _in vitro_ model of the human small intestine
    > conda env create -f envs/default.yml
    
    - Run the scripts
-   
-   > Rscript bin/dataset-control.R
-   
-   > Rscript bin/control-analysis-qc.R
-   
-   > Rscript bin/control-analysis-core.R
-   
-   > Rscript bin/control-analysis-celltypes.R
+   ```
+   Rscript bin/dataset-control.R
+   Rscript bin/control-analysis-qc.R
+   Rscript bin/control-analysis-core.R
+   Rscript bin/control-analysis-celltypes.R
+   ```
