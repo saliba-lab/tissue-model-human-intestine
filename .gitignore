@@ -1,3 +1,6 @@
 data/
 analysis/
 
+# R files
+.Rhistory
+Rplots.pdf

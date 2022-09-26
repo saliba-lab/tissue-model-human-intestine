@@ -1,0 +1,15 @@
+name: tissue-model-human-intestine
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-seurat=4.1.0
+  - r-seuratobject=4.0.4
+  - bioconductor-rhdf5=2.38.0
+  - bioconductor-bluster=1.4.0
+  - r-docopt=0.7.1
+  - r-viridis=0.6.2
+  - r-uwot=0.1.11
+  - leidenalg=0.8.9
+  - r-leiden=0.3.9
