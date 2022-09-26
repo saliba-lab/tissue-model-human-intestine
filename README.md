@@ -13,6 +13,9 @@ This repository contains code for the analysis of scRNA-seq of two tissue models
 
 * Control
    - Clone the **git** repository
+   ```
+   git clone https://github.com/saliba-lab/tissue-model-human-intestine.git
+   ```
    
    - Install [conda](https://docs.conda.io/en/latest/miniconda.html)
    
