@@ -12,11 +12,18 @@ An _in vitro_ model of the human small intestine
 
 * Control
    - Clone the **git** repository
+   
    - Install [conda](https://docs.conda.io/en/latest/miniconda.html)
+   
    - Create **conda** environment
    > conda env create -f envs/default.yml
+   
    - Run the scripts
+   
    > Rscript bin/dataset-control.R
+   
    > Rscript bin/control-analysis-qc.R
+   
    > Rscript bin/control-analysis-core.R
+   
    > Rscript bin/control-analysis-celltypes.R
