@@ -23,6 +23,7 @@ This repository contains code for the analysis of scRNA-seq of two tissue models
    - Create **conda** environment
    ```
    conda env create -f envs/default.yml
+   conda activate tissue-model-human-intestine
    ```
    
    - Run the scripts
